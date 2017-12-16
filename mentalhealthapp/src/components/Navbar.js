@@ -4,9 +4,9 @@ const Navbar = () => (
 
   <nav className="navbar navbar-dark bg-dark">
   
-    <span className="navbar-brand mb-0 h1">Final Project</span>
-      <h2 className="navbar-brand mb-0 h1">Whatever</h2>
-      <h2 className="navbar-brand mb-0 h1">Score: 0</h2>
+    <span className="navbar-brand mb-0 h1">Name</span>
+      <h2 className="navbar-brand mb-0 h1">Tracker?</h2>
+      <h2 className="navbar-brand mb-0 h1">Resources</h2>
     </nav>
   );
 
