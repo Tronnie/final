@@ -1,0 +1,31 @@
+#backdrop {
+	background-color: #dbdbdb;
+	height: 630px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 15%;
+	padding-top: 30px;
+
+}
+
+#card {
+	background-color: white;
+	height: 540px;
+}
+
+#decline {
+	float:left;
+}
+#accept {
+	float: right;
+}
+
+.selector {
+	width: 80%;
+
+}
+
+img {
+	position: relative;
+	top: 100px;
+}

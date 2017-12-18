@@ -1,0 +1,15 @@
+#decline {
+	background-color: red;
+}
+
+#accept {
+	background-color: lightgreen;
+}
+
+#instructions {
+	background-color: gold;
+}
+
+Button {
+	font-size: 26px;
+}

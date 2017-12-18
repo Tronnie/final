@@ -13,9 +13,9 @@ const Stars = () => (
       <input type="radio" id="2-star" name="rating" value="2" /><label for="2-star" title="Not Good">2 stars</label>
       <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star" title="Bad">1 star</label>
       
-  </ul>
+     </ul>
     
   </section>
-  );
+);
 
 export default Stars;

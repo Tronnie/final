@@ -1,5 +1,7 @@
 import React from "react";
 import "./Activity.css";
+import Tile from "../Tile";
+import Stars from "../Stars";
 
 
 class Activity extends React.Component{
@@ -12,10 +14,11 @@ class Activity extends React.Component{
 
 
 		return(
-			<div className="container">
+			<div className="container-flex">
 				<div className="row">	
 					<div id="activity" className="col-12 align-self-center">
-						<h1>Welcome to our Mental Health App!!!1!1!</h1>
+						<Stars />
+						<Tile title="Exercise"/>
 					</div>
 				</div>
 			</div>
