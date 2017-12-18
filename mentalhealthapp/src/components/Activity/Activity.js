@@ -9,6 +9,22 @@ class Activity extends React.Component{
 
 	//insert funcitons and state stuff here
 
+	state = {
+		
+		instructions: "Lorem Ipsum - Do some jumping jacks!!!!",
+		imgsrc: "bicycle.ico"	
+
+	}
+
+	displayInstructions = (e) => {
+		if(this.state.imgsrc === '') {
+			this.setState({imgsrc:'bicycle.ico'})
+		} else {
+			this.setState({imgsrc:''});
+		}
+
+	}
+
 
 	render() {
 
@@ -18,7 +34,7 @@ class Activity extends React.Component{
 				<div className="row">	
 					<div id="activity" className="col-12 align-self-center">
 						<Stars />
-						<Tile title="Exercise"/>
+						<Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Exercise"/>
 					</div>
 				</div>
 			</div>

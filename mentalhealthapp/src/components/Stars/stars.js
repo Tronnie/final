@@ -5,7 +5,7 @@ const Stars = () => (
   <section>
 
    
-      <ul classname="rate-area">
+      <ul className="rate-area">
           <hr />
       <input type="radio" id="5-star" name="rating" value="5" /><label for="5-star" title="Amazing">5 stars</label>
       <input type="radio" id="4-star" name="rating" value="4" /><label for="4-star" title="Good">4 stars</label>

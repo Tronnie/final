@@ -1,0 +1,22 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "Final Project for UCBerkeley Coding Bootcamp 2017.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tronnie/final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tronnie/final/issues"
+  },
+  "homepage": "https://github.com/Tronnie/final#readme",
+  "dependencies": {
+    "react-star-rating": "^1.4.2"
+  }
+}
