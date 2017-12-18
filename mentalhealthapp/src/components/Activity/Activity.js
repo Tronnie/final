@@ -2,6 +2,7 @@ import React from "react";
 import "./Activity.css";
 import Tile from "../Tile";
 import Stars from "../Stars";
+import ReactSwipe from "react-swipe";
 
 
 class Activity extends React.Component{
@@ -34,9 +35,14 @@ class Activity extends React.Component{
 				<div className="row">	
 					<div id="activity" className="col-12 align-self-center">
 						<Stars />
-						<Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Exercise"/>
+						<ReactSwipe className="carousel swipeOptions={{continuous: flase}}">
+							<div><Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Sleep"/></div>
+							<div><Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Exercise"/></div>
+							<div><Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Eat"/></div>
+						</ReactSwipe>
 					</div>
 				</div>
+
 			</div>
 
 		)
