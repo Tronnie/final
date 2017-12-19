@@ -35,9 +35,9 @@ class Activity extends React.Component{
 				<div className="row">	
 					<div id="activity" className="col-12 align-self-center">
 						<Stars />
-						<ReactSwipe className="carousel swipeOptions={{continuous: flase}}">
-							<div><Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Sleep"/></div>
-							<div><Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Exercise"/></div>
+						<ReactSwipe className="carousel swipeOptions={{continuous: false}}">
+							<div><Tile accept={this.next} decline={this.decline} image={this.state.imgsrc} instructions={this.props.instructions} setInstructions={this.displayInstructions} title="Sleep"/></div>
+							<div><Tile image={this.props.images} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Exercise"/></div>
 							<div><Tile image={this.state.imgsrc} instructions={this.state.instructions} setInstructions={this.displayInstructions} title="Eat"/></div>
 						</ReactSwipe>
 					</div>

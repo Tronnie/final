@@ -3,7 +3,7 @@ import "./Button.css";
 
 const Button = (props) => (
 
-	<button id={props.id}>{props.name}</button>
+	<button onClick={props.onClick} id={props.id}>{props.name}</button>
 
 
 

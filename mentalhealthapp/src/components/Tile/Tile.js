@@ -10,8 +10,8 @@ const Tile = (props) => (
 			<img src={props.image} alt={props.instructions}/>
 		</div>
 		<div className="selector col-10 offset-lg-1 offset-md-1">
-			<Button id="decline" name="Decline"/>
-			<Button id="accept" name="Accept"/>
+			<Button onClick={props.decline} id="decline" name="Decline"/>
+			<Button onClick={props.accept} id="accept" name="Accept"/>
 		</div>
 	</div>
 
