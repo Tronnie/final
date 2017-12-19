@@ -14,6 +14,16 @@ class App extends Component {
 
 	}
 
+	displayInstructions = (e) => {
+		if(this.state.images === '') {
+			this.setState({images:'horesy.png'})
+		} else {
+			this.setState({images:''});
+		}
+
+	}
+
+
 
 
 
@@ -23,7 +33,7 @@ class App extends Component {
     return (
       <div className="App">
       	<Navbar />
-      	<Activity titles={this.state.titles} images={this.state.images} instructions={this.state.instructions} /> 
+      	<Activity titles={this.state.titles} images={this.state.images} instructions={this.state.instructions} display={this.displayInstructions} /> 
         
       </div>
     );
