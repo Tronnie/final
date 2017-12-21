@@ -7,11 +7,7 @@ import ReactSwipe from "react-swipe";
 
 class Activity extends React.Component{
 
-
-	//insert funcitons and state stuff here
-	// render Tiles here in a function
-
-
+	
 	render() {
 
 
@@ -22,7 +18,7 @@ class Activity extends React.Component{
 						<Stars />
 						<ReactSwipe className="carousel swipeOptions={{continuous: false}}">
 							{this.props.tiles.map((el) => (
-								<div><Tile image={el.image} instructions={el.instruction}/></div>))}
+								<div><Tile image={el.image} contents={this.props.contents} title={el.title} updater={this.props.updater} clicked={this.props.clicked} display={this.props.display} instruction={el.instruction}/></div>))}
 						</ReactSwipe>
 					</div>
 				</div>
