@@ -7,6 +7,7 @@ import ReactSwipe from "react-swipe";
 
 class Activity extends React.Component{
 
+
 	
 	render() {
 
@@ -16,9 +17,17 @@ class Activity extends React.Component{
 				<div className="row">	
 					<div id="activity" className="col-12 align-self-center">
 						<Stars />
-						<ReactSwipe className="carousel swipeOptions={{continuous: false}}">
+							<ReactSwipe className="carousel" 
+										swipeOptions={{continuous: true}, 
+										{callback:(i,e) =>{this.props.display(false,this.props.tiles[i].image,this.props.tiles[i].instruction)}}}>
 							{this.props.tiles.map((el) => (
-								<div><Tile image={el.image} contents={this.props.contents} title={el.title} updater={this.props.updater} clicked={this.props.clicked} display={this.props.display} instruction={el.instruction}/></div>))}
+								<div><Tile image={el.image}
+								 contents={this.props.contents}
+								 title={el.title}
+								 updater={this.props.updater}
+								 clicked={this.props.clicked} 
+								 display={this.props.display} 
+								 instruction={el.instruction}/></div>))}
 						</ReactSwipe>
 					</div>
 				</div>
