@@ -26,5 +26,147 @@
     "image":
       "stretch.png",
     "instruction": "Do a forward bend.  Hold for 10 seconds. Repeat 3 times"
+  },
+
+  {
+    "id": 5,
+    "title": "Journal",
+    "image": 
+      "journal.png",
+    "instruction": "Reflect on the people in your life who have supported you. Perhaps later you reach out to catch up with them. "
+  },
+ {
+    "id": 6,
+    "title": "Journal",
+    "image": 
+      "journal.png",
+    "instruction": "What are people's perception of you and what would you wish they would know about you? "
+  },
+   {
+    "id": 7,
+    "title": "Journal",
+    "image": 
+      "journal.png",
+    "instruction": " What makes you feel most energized?"
+  },
+   {
+    "id": 8,
+    "title": "Journal",
+    "image": 
+      "journal.png",
+    "instruction": "List your non-negotiables in life"
+  },
+   {
+    "id": 9,
+    "title": "Journal",
+    "image": 
+      "journal.png",
+    "instruction": "What you say yes to, what you say no to. Commit to them. "
   }
+
+  {
+    "id": 10,
+    "title": "Mindful",
+    "image":
+      "mindful.png",
+    "instruction": "Find a comfortable spot, meditate for 20 minutes."
+  },
+
+ {
+    "id": 11,
+    "title": "Mindful",
+    "image":
+      "mindful.png",
+    "instruction": " Find a routine you enjoy and take your time to eek it out. Notice if slowing down speeds things up."
+  },
+
+   {
+    "id": 12,
+    "title": "Mindful",
+    "image":
+      "mindful.png",
+    "instruction": "Observe your thoughts for fifteen minutes. Self-study."
+  },
+ {
+    "id": 13,
+    "title": "Mindful",
+    "image":
+      "mindful.png",
+    "instruction": "In your yoga class, forget the fancy poses, focus on Savasana (corpse pose) at the end of the practice. Where did it take you? Besides zzzzz."
+  },
+
+
+  {
+    "id": 14,
+    "title": "Social",
+    "image":
+      "social.jpg",
+    "instruction": "In transit? Take a different route to your next destination, never know who you'll meet."
+  },
+
+{
+    "id": 15,
+    "title": "Social",
+    "image":
+      "social.jpg",
+    "instruction": "Play a few rounds of 'Never have I ever'. No drinking required, although you may get more mileage out of others. In vino veritas."
+  },
+  {
+    "id": 16,
+    "title": "Social",
+    "image":
+      "social.jpg",
+    "instruction": "With a loved one, or maybe close friends, whisper your favorite ice cream flavor in your most dirtiest voice... ever. "
+  },
+  
+
+  {
+    "id": 17,
+    "title": "Social",
+    "image":
+       "social.jpg",
+    "instruction": "Karaoke night. Bohemian Rhapsody. Whatever song you choose, do it with verve, break the glass windows on the storefront."
+  },
+
+  {
+    "id": 18,
+    "title": "Art",
+    "image":
+      "art.jpg",
+    "instruction": "Make a vision board"
+  },
+{
+    "id": 19,
+    "title": "Art",
+    "image":
+      "art.jpg",
+    "instruction": "Knit"
+  },
+
+{
+    "id": 20,
+    "title": "Art",
+    "image":
+      "art.jpg",
+    "instruction": "Listen to music. Explore a platform i.e. YouTube, Spotify for new music you haven't heard yet."
+  },
+
+{
+    "id": 21,
+    "title": "Wild card",
+    "image":
+      "horesy.png",
+    "instruction": "Having a bad day? If at first you don't succeed. Eat a cupcake (or whatever you want)."
+  },
+
+  {
+    "id": 22,
+    "title": "Wild card",
+    "image":
+      "horesy.png",
+    "instruction": "Silliness abound. Grab some straws, box of Whoppers (or marshmallows), 1 bowl/plate. At one go, all players get 30 sec to use straw to suck whopper from bowl to hand. Winner who has most stuffs all into their cheeks and takes selfie. But be safe."
+  },
+
+
+
 ]
