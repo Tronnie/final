@@ -1,0 +1,64 @@
+h3 {
+    color:darkgrey;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
+
+.rate-area {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    border-style: none;
+}
+
+.rate-area:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rate-area:not(:checked) > label {
+    
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:400%;
+    line-height:1.2;
+    color:lightgrey;
+    text-shadow:1px 1px #bbb;
+}
+
+.rate-area:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate-area > input:checked ~ label {
+    color: gold;
+    text-shadow:1px 1px #c60;
+    font-size:450% !important;
+}
+
+.rate-area:not(:checked) > ,
+.rate-area:not(:checked) >  ~ label {
+    color: gold;
+    
+}
+
+.rate-area > input:checked ,
+.rate-area > input:checked +  ~ label,
+.rate-area > input:checked ~ ,
+.rate-area > input:checked ~  ~ label,
+.rate-area >  ~ input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;   
+    
+}
+
+.rate-area > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
