@@ -62,7 +62,7 @@
     "image": 
       "journal.png",
     "instruction": "What you say yes to, what you say no to. Commit to them. "
-  }
+  },
 
   {
     "id": 10,
@@ -94,7 +94,6 @@
       "mindful.png",
     "instruction": "In your yoga class, forget the fancy poses, focus on Savasana (corpse pose) at the end of the practice. Where did it take you? Besides zzzzz."
   },
-
 
   {
     "id": 14,
@@ -159,13 +158,13 @@
     "instruction": "Having a bad day? If at first you don't succeed. Eat a cupcake (or whatever you want)."
   },
 
-  {
+{
     "id": 22,
     "title": "Wild card",
     "image":
       "horesy.png",
     "instruction": "Silliness abound. Grab some straws, box of Whoppers (or marshmallows), 1 bowl/plate. At one go, all players get 30 sec to use straw to suck whopper from bowl to hand. Winner who has most stuffs all into their cheeks and takes selfie. But be safe."
-  },
+  }
 
 
 

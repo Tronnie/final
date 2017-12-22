@@ -14,7 +14,6 @@ class App extends Component {
 	}
 
 	display = (clicked,img,instructions) => {
-		console.log('Hello')
 		console.log(this.state.clicked)
 
 		if(!clicked) {
@@ -26,11 +25,16 @@ class App extends Component {
 	}
 
 	updateClicked = (e) => {
-		if (this.state.clicked === false){
+		if (e === false){
 			this.setState({clicked: true})
+			console.log(e)
 		} else {
 			this.setState({clicked: false})
 		}
+	}
+
+	setClickedToFalse = (e) => {
+		if(this.state.clicked===true) this.setState({clicked:false})
 	}
 	
 
@@ -38,7 +42,7 @@ class App extends Component {
     return (
       <div className="App">
       	<Navbar />
-      	<Activity tiles={tiles} clicked={this.state.clicked} contents={this.state.contents} updater={this.updateClicked} display={this.display} /> 
+      	<Activity tiles={tiles} falsify={this.setClickedToFalse} clicked={this.state.clicked} contents={this.state.contents} updater={this.updateClicked} display={this.display} /> 
         
       </div>
     );
