@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Tronnie/final#readme",
   "dependencies": {
-    "react-star-rating": "^1.4.2"
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "react-star-rating": "^1.4.2",
+    "sequelize": "^4.28.6"
   }
 }

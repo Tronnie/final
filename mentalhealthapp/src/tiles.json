@@ -31,35 +31,35 @@
   {
     "id": 5,
     "title": "Journal",
-    "image": 
+    "image":
       "journal.png",
     "instruction": "Reflect on the people in your life who have supported you. Perhaps later you reach out to catch up with them. "
   },
  {
     "id": 6,
     "title": "Journal",
-    "image": 
+    "image":
       "journal.png",
     "instruction": "What are people's perception of you and what would you wish they would know about you? "
   },
    {
     "id": 7,
     "title": "Journal",
-    "image": 
+    "image":
       "journal.png",
     "instruction": " What makes you feel most energized?"
   },
    {
     "id": 8,
     "title": "Journal",
-    "image": 
+    "image":
       "journal.png",
     "instruction": "List your non-negotiables in life"
   },
    {
     "id": 9,
     "title": "Journal",
-    "image": 
+    "image":
       "journal.png",
     "instruction": "What you say yes to, what you say no to. Commit to them. "
   },
@@ -117,7 +117,7 @@
       "social.jpg",
     "instruction": "With a loved one, or maybe close friends, whisper your favorite ice cream flavor in your most dirtiest voice... ever. "
   },
-  
+
 
   {
     "id": 17,
@@ -164,8 +164,45 @@
     "image":
       "horesy.png",
     "instruction": "Silliness abound. Grab some straws, box of Whoppers (or marshmallows), 1 bowl/plate. At one go, all players get 30 sec to use straw to suck whopper from bowl to hand. Winner who has most stuffs all into their cheeks and takes selfie. But be safe."
-  }
+  },
+  {
+      "id": 23,
+      "title": "Mindful",
+      "image":
+        "mindful.png",
+      "instruction": "Mindful Walking for 10 minutes.  Set a timer.  Keep hands stationary either on sides, behind the back or in front. Begin walkding and notice teh lifting forward and placing movement of the foot in each step.  Finish one step completely before lifting the other foot.  Use the movement to develop careful awareness. The exercise is in mindfulness not movement."
+    },
 
+    {
+        "id": 24,
+        "title": "Social",
+        "image":
+          "social.jpg",
+        "instruction": "Empathetic Listening. Focus full attention on the other person's message.  Give to the other person the time and space they need to express themselves fully and to feel understood.  Resist the urge to give advice or reassurance and to explain your own position or feeling."
+      },
 
+      {
+          "id": 25,
+          "title": "Journal",
+          "image":
+            "journal.png",
+          "instruction": "Color Schemes.  Pick a color and write a quick few sentences describing yourself in the first person.  (e.g.'I am silver, high-tech and ethereal, the color of reams and accomplishment').  What is your favorite color? What do you have that is that color?"
+        },
+
+        {
+            "id": 26,
+            "title": "Wild Card",
+            "image":
+              "horesy.png",
+            "instruction": "Open yuour closet.  Throw out or give away five ratty pieces of clothing.  Make space for the new."
+          },
+
+          {
+              "id": 27,
+              "title": "Social",
+              "image":
+                "social.jpg",
+              "instruction": "Send postcards to 5 friends.  Send to people you would love to hear from. "
+            }
 
 ]
