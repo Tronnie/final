@@ -27,7 +27,9 @@ class Activity extends React.Component{
 								 updater={this.props.updater}
 								 clicked={this.props.clicked} 
 								 display={this.props.display} 
-								 instruction={el.instruction}/></div>))}
+								 instruction={el.instruction}
+								 success={this.props.success}
+								 		/></div>))}
 						</ReactSwipe>
 					</div>
 				</div>

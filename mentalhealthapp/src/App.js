@@ -30,6 +30,10 @@ class App extends Component {
 
 	}
 
+	success = () => {
+		this.setState({currentModal:"SUCCESS"})
+	}
+
 	closeMe =()=>{
 		this.setState({modal:false})
 	}
@@ -77,7 +81,15 @@ class App extends Component {
       <div className="App">
       	<Navbar login={this.logIn} openMe={this.openMe} logout={this.logOut} status={this.state.loggedIn} />
       	<ModalConductor isOpen={this.state.modal} closeMe={this.closeMe} currentModal={this.state.currentModal} />
-      	<Activity tiles={tiles} falsify={this.setClickedToFalse} clicked={this.state.clicked} contents={this.state.contents} updater={this.updateClicked} display={this.display} /> 
+      	<Activity 
+      			  tiles={tiles} 
+      			  falsify={this.setClickedToFalse}
+      			  clicked={this.state.clicked}
+      			  contents={this.state.contents}
+      			  updater={this.updateClicked}
+      			  display={this.display}
+      			  success={this.success}
+      	 /> 
         
       </div>
     );

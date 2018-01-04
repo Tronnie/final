@@ -3,6 +3,7 @@ import "./ModalConductor.css";
 import Modal from "react-modal";
 import Button from "../Button";
 import Login from "../Login";
+import Success from "../Success";
 
 
 const ModalConductor = (props) => {
@@ -35,17 +36,62 @@ const ModalConductor = (props) => {
 		  }
 	};
 
+		switch (props.currentModal) {
 
-	return(
-			<Modal 
-				isOpen={props.isOpen}
-				style={customStyles}
-				contentLabel="Modal"
-				>
-				<Button onClick={props.closeMe} name="hehe"/>
-				<Login currentModal={props.currentModal} />
-			</Modal>
-		)
+			case "SIGN_IN":
+				return( <Modal 
+					isOpen={props.isOpen}
+					style={customStyles}
+					contentLabel="Modal"
+					>
+					<Login currentModal={props.currentModal} />
+					<div id="cancel">
+						<Button onClick={props.closeMe} name="Cancel"/>
+					</div>
+				</Modal>);
+				break;
+			case "SUCCESS":
+				return(<Modal 
+					isOpen={props.isOpen}
+					style={customStyles}
+					contentLabel="Modal"
+					>
+					<Success />
+					<div id="done">
+						<Button onClick={props.closeMe} name="DONE"/>
+					</div>
+				</Modal>)
+				break
+			default:
+				break
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+	// return(
+	// 		<Modal 
+	// 			isOpen={props.isOpen}
+	// 			style={customStyles}
+	// 			contentLabel="Modal"
+	// 			>
+	// 			<Login currentModal={props.currentModal} />
+	// 			<div id="cancel">
+	// 				<Button onClick={props.closeMe} name="Cancel"/>
+	// 			</div>
+	// 		</Modal>
+	// 	)
 
 };
 

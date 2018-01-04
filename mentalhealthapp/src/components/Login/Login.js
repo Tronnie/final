@@ -21,16 +21,19 @@ class Login extends React.Component {
 
 		return(
 
-			<div>
+			<div id="signin">
 				
 				<div className="login">
-					<label className="modal"><b>Username</b></label>
-   					<input  type="text" placeholder="Enter Username" name="uname" require/>
+					<h3>Sign In</h3>
+					<div className="username">
+						<label className="modal"><b>Username</b></label>
+	   					<input  type="text" placeholder="Enter Username" name="uname" required/>
+	   				</div>
 					<label className="modal"><b>Password</b></label>
 				    <input   type="password" placeholder="Enter Password" name="psw" required/>
+				    <br/>
 
-				    <button type="submit">Login</button>
-				    <input type="checkbox" checked="checked"/>
+				    <button id="log-btn" type="submit">Login</button>
 				</div>
 			</div>
 

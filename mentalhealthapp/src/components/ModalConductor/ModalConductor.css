@@ -1,6 +1,6 @@
 button {
 
-	background-color: green;
+	background-color: #42f4b0;
 	font-size: 20px;
 	width: 40%;
 }
@@ -10,3 +10,11 @@ button {
 	height: 60%;
 }
 
+
+#cancel {
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	width: 90%;
+
+}

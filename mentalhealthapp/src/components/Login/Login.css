@@ -7,9 +7,21 @@ input {
 	text-align: center;
 }
 
-.login {
+.username {
 	text-align: center;
-	position: fixed;
 	top: 30%;
+}
+
+.login {
+	margin: auto;
+}
+
+#signin {
+	text-align: center;
+
+}
+
+#log-btn {
+	margin-top: 20px;
 }
 

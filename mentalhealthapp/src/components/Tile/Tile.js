@@ -10,7 +10,7 @@ const Tile = (props) => (
 		</div>
 		<div className="selector col-10 offset-lg-1 offset-md-1">
 			<Button onClick={props.decline} id="decline" name="Decline"/>
-			<Button id="accept" name="Accept"/>
+			<Button id="accept" success={props.success} name="Accept"/>
 		</div>
 	</div>
 

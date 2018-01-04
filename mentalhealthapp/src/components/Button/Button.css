@@ -10,6 +10,6 @@
 	background-color: gold;
 }
 
-Button {
-	font-size: 26px;
+button {
+	width: 80%;
 }
