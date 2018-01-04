@@ -19,7 +19,7 @@ class Activity extends React.Component{
 						<Stars />
 							<ReactSwipe className="carousel" 
 										swipeOptions={{continuous: true}, 
-										{callback:(i,e) =>{this.props.display(false,this.props.tiles[i].image,this.props.tiles[i].instruction)}}}>
+										{callback:(i,e) =>{this.props.falsify();this.props.display(false,this.props.tiles[i].image,this.props.tiles[i].instruction)}}}>
 							{this.props.tiles.map((el) => (
 								<div><Tile image={el.image}
 								 contents={this.props.contents}

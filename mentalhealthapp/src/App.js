@@ -3,18 +3,23 @@ import Navbar from "./components/Navbar";
 import Activity from "./components/Activity";
 import './App.css';
 import tiles from './tiles.json';
-// import updater from "./updateClicked.js";
+import Login from "./components/Login";
+import ModalConductor from "./components/ModalConductor";
+import Modal from "react-modal";
+
 
 class App extends Component {
 
 
 	state = {
 		clicked: false,
-		contents: ''
+		contents: '',
+		loggedIn: false,
+		modal:    false,
+		currentModal: "SIGN_IN"
 	}
 
 	display = (clicked,img,instructions) => {
-		console.log('Hello')
 		console.log(this.state.clicked)
 
 		if(!clicked) {
@@ -25,20 +30,54 @@ class App extends Component {
 
 	}
 
+	closeMe =()=>{
+		this.setState({modal:false})
+	}
+
+	openMe =() => {
+		this.setState({modal:true})
+	}
+
+	logIn = () => {
+
+		if (this.state.loggedIn === false) {
+			this.setState({loggedIn: true})
+		}
+
+	}
+
+	logOut = () => {
+
+		if (this.state.loggedIn === true) {
+			this.setState({loggedIn: false})
+		}
+
+	}
+
 	updateClicked = (e) => {
-		if (this.state.clicked === false){
+		if (e === false){
 			this.setState({clicked: true})
+			console.log(e)
 		} else {
 			this.setState({clicked: false})
 		}
 	}
+
+	setClickedToFalse = (e) => {
+		if(this.state.clicked===true) this.setState({clicked:false})
+	}
 	
+	componentWillMount() {
+    Modal.setAppElement('body');
+ 	}
+
 
   render() {
     return (
       <div className="App">
-      	<Navbar />
-      	<Activity tiles={tiles} clicked={this.state.clicked} contents={this.state.contents} updater={this.updateClicked} display={this.display} /> 
+      	<Navbar login={this.logIn} openMe={this.openMe} logout={this.logOut} status={this.state.loggedIn} />
+      	<ModalConductor isOpen={this.state.modal} closeMe={this.closeMe} currentModal={this.state.currentModal} />
+      	<Activity tiles={tiles} falsify={this.setClickedToFalse} clicked={this.state.clicked} contents={this.state.contents} updater={this.updateClicked} display={this.display} /> 
         
       </div>
     );
