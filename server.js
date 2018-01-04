@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-// const mongoose = require("mongoose");
-const mysql = require('mysql')
+const mongoose = require("mongoose");
+// const mysql = require('mysql')
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -15,11 +15,15 @@ app.use(express.static("client/build"));
 app.use(routes);
 
 
-db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
-});
+// Set up promises with mongoose
+mongoose.Promise = global.Promise;
+// Connect to the Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/reactactivitylist",
+  {
+    useMongoClient: true
+  }
+);
 
 
 // Start the API server
