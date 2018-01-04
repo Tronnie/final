@@ -1,0 +1,15 @@
+input {
+
+	margin: 20px;
+}
+
+.pop-up {
+	text-align: center;
+}
+
+.login {
+	text-align: center;
+	position: fixed;
+	top: 30%;
+}
+
