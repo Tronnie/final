@@ -1,7 +1,6 @@
 import React from "react";
 import "./Tile.css";
 import Button from "../Button";
-
 const Tile = (props) => (
 
 	<div id="backdrop" className="col-8 offset-md-2 offset-lg-2">

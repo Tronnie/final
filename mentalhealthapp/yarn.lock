@@ -2342,6 +2342,10 @@ execa@^0.7.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exenv@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+
 expand-brackets@^0.1.4:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/expand-brackets/-/expand-brackets-0.1.5.tgz#df07284e342a807cd733ac5af72411e581d1177b"
@@ -5096,6 +5100,12 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-bootstrap-sweetalert@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-sweetalert/-/react-bootstrap-sweetalert-4.1.0.tgz#1e9297af13e2084a25b95062dcda2c02a57498d6"
+  dependencies:
+    object-assign "^4.1.0"
+
 react-dev-utils@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.1.tgz#9f2763e7bafa1a1b9c52254d2a479deec280f111"
@@ -5119,7 +5129,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@16.2.0:
+react-dom@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
@@ -5131,6 +5141,14 @@ react-dom@16.2.0:
 react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
+
+react-modal@^3.1.10:
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.10.tgz#8898b5cc4ebba78adbb8dea4c55a69818aa682cc"
+  dependencies:
+    exenv "^1.2.0"
+    prop-types "^15.5.10"
+    warning "^3.0.0"
 
 react-scripts@1.0.17:
   version "1.0.17"
@@ -5175,7 +5193,15 @@ react-scripts@1.0.17:
   optionalDependencies:
     fsevents "1.1.2"
 
-react@16.2.0:
+react-swipe@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-swipe/-/react-swipe-5.1.1.tgz#5aeb08afc5efec13507aed6e5841360821e9f0d1"
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+    swipe-js-iso "^2.0.4"
+
+react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
@@ -5958,6 +5984,10 @@ sw-toolbox@^3.4.0:
     path-to-regexp "^1.0.1"
     serviceworker-cache-polyfill "^4.0.0"
 
+swipe-js-iso@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/swipe-js-iso/-/swipe-js-iso-2.0.4.tgz#3371608112b30182e898f61d5bc02f7e38099c3d"
+
 symbol-tree@^3.2.1:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.2.tgz#ae27db38f660a7ae2e1c3b7d1bc290819b8519e6"
@@ -6291,6 +6321,12 @@ walker@~1.0.5:
   resolved "https://registry.yarnpkg.com/walker/-/walker-1.0.7.tgz#2f7f9b8fd10d677262b18a884e28d19618e028fb"
   dependencies:
     makeerror "1.0.x"
+
+warning@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+  dependencies:
+    loose-envify "^1.0.0"
 
 watch@~0.10.0:
   version "0.10.0"

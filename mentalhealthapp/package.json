@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
+    "react-bootstrap-sweetalert": "^4.1.0",
     "react-dom": "^16.2.0",
+    "react-modal": "^3.1.10",
     "react-scripts": "1.0.17",
     "react-swipe": "^5.1.1",
     "swipe-js-iso": "^2.0.4"
