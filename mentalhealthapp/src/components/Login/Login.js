@@ -19,43 +19,23 @@
 // 	render() {
 
 
-// 		return(
+// // 		return(
 
-<<<<<<< HEAD
-			<div id="signin">
-				
-				<div className="login">
-					<h3>Sign In</h3>
-					<div className="username">
-						<label className="modal"><b>Username</b></label>
-	   					<input  type="text" placeholder="Enter Username" name="uname" required/>
-	   				</div>
-					<label className="modal"><b>Password</b></label>
-				    <input   type="password" placeholder="Enter Password" name="psw" required/>
-				    <br/>
-
-				    <button id="log-btn" type="submit">Login</button>
-				</div>
-			</div>
-=======
-// 			<div>
+// 			<div id="signin">
 				
 // 				<div className="login">
-// 					<label className="modal"><b>Username</b></label>
-//    					<input  type="text" placeholder="Enter Username" name="uname" require/>
+// 					<h3>Sign In</h3>
+// 					<div className="username">
+// 						<label className="modal"><b>Username</b></label>
+// 	   					<input  type="text" placeholder="Enter Username" name="uname" required/>
+// 	   				</div>
 // 					<label className="modal"><b>Password</b></label>
 // 				    <input   type="password" placeholder="Enter Password" name="psw" required/>
+// 				    <br/>
 
-// 				    <button type="submit">Login</button>
-// 				    <input type="checkbox" checked="checked"/>
+// 				    <button id="log-btn" type="submit">Login</button>
 // 				</div>
 // 			</div>
-
-// 			)
-// 		}
-// 	}
->>>>>>> 6a4e9ffdb868bfa907a7a36449a5f49893c7e4b0
-
 
 
 import React from "react"

@@ -50,6 +50,7 @@ const ModalConductor = (props) => {
 					</div>
 				</Modal>);
 				break;
+				
 			case "SUCCESS":
 				return(<Modal 
 					isOpen={props.isOpen}
@@ -61,9 +62,10 @@ const ModalConductor = (props) => {
 						<Button onClick={props.closeMe} name="DONE"/>
 					</div>
 				</Modal>)
-				break
+				break;
+
 			default:
-				break
+				break;
 
 
 
