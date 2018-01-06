@@ -17,7 +17,6 @@ CREATE TABLE activities
   id int NOT NULL AUTO_INCREMENT,
   user_id int NOT NULL,
   activity_id int NOT NULL,
-  date_id DATETIME,
   was_accepted BOOLEAN NOT NULL DEFAULT 0,
   PRIMARY KEY (id),
   FOREIGN KEY (user_id) REFERENCES users(id)
