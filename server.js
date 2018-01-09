@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const bodyParser = require("body-parser");
 let mysql = require('mysql');
@@ -5,16 +6,35 @@ const db = require('./db_sql/models');
 const routes = require("./db_sql/routes/user-routes.js");
 const app = express();
 const PORT = process.env.PORT || 7500;
+=======
+// *****************************************************************************
+// Server.js - This file is the initial starting point for the Node/Express server.
+//
+// ******************************************************************************
+// *** Dependencies
+// =============================================================
+var express = require("express");
+var bodyParser = require("body-parser");
+>>>>>>> 5192622b7d6ce7830bace3e510ab5788493d0ca3
 
-// Configure body parser for AJAX requests
-app.use(bodyParser.urlencoded({ extended: false }));
+// Sets up the Express App
+// =============================================================
+var app = express();
+var PORT = process.env.PORT || 7500;
+
+// Requiring our models for syncing
+var db = require("./models");
+
+// Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
-// Serve up static assets
-app.use(express.static("client/build"));
-// Add routes, both API and view
-app.use(routes);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+// Static directory
+app.use(express.static("public"));
 
+<<<<<<< HEAD
 
 
 // Set up MySQL
@@ -41,6 +61,17 @@ connection.connect(function(err) {
 
 // Start the API server
 db.sequelize.sync({ force: true }).then(function() {
+=======
+// Routes
+// =============================================================
+require("./routes/activity-routes.js")(app);
+require("./routes/user-routes.js")(app);
+
+
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync({ force: false }).then(function() {
+>>>>>>> 5192622b7d6ce7830bace3e510ab5788493d0ca3
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
