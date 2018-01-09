@@ -54,9 +54,10 @@ require("./routes/user-routes.js")(app);
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: false }).then(function() {
->>>>>>> 5192622b7d6ce7830bace3e510ab5788493d0ca3
+
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
+});
 });
 
