@@ -47,8 +47,8 @@ db.sequelize.sync({ force: true }).then(function() {
 
 // Routes
 // =============================================================
-require("./routes/activity-routes.js")(app);
-require("./routes/user-routes.js")(app);
+require("./db_sql/routes/activity-routes.js")(app);
+require("./db_sql/routes/user-routes.js")(app);
 
 
 // Syncing our sequelize models and then starting our Express app
