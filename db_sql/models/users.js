@@ -5,14 +5,12 @@ module.exports = function (sequelize, DataTypes){
     }
   });
 
-/*
   User.associate = function(models){
     // associating user with activities
     User.hasMany(models.Activities, {
       onDelete: "cascade"
     });
   };
-  */
 
   return User;
 };
