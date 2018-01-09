@@ -70,6 +70,11 @@ const ModalConductor = (props) => {
 
 
 		}
+//use:
+//login
+//register
+//accept
+//done
 
 
 

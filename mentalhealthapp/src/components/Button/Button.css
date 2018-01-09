@@ -1,14 +1,19 @@
 #decline {
 	background-color: red;
+	padding: 10px;
+    border: 1px solid black;
 }
 
 #accept {
 	background-color: lightgreen;
+	padding: 10px;
+    border: 1px solid black;
 }
 
 #instructions {
 	background-color: gold;
 }
+
 
 button {
 	width: 80%;

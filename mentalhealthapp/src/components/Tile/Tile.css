@@ -1,5 +1,7 @@
 #backdrop {
-	background-color: #dbdbdb;
+
+	/*background-color: #dbdbdb;*/
+	background-image: url("grey-background.jpg");
 	height: 630px;
 	margin-top: 20px;
 	margin-bottom: 20px;
