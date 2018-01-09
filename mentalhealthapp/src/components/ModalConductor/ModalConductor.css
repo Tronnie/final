@@ -3,6 +3,7 @@ button {
 	background-color: #c1d2cc;
 	font-size: 20px;
 	width: 40%;
+	border-radius: 5px 5px;
 }
 
 .login {

@@ -4,6 +4,9 @@ import Activity from "./components/Activity";
 import './App.css';
 import tiles from './tiles.json';
 import Login from "./components/Login";
+
+import Register from "./components/Register";
+
 import Footer from "./components/Footer";
 import ModalConductor from "./components/ModalConductor";
 import Modal from "react-modal";

@@ -11,7 +11,7 @@ const Footer = ()=> {
 	return (
 
 		<div id="footer">
-			<h1>This is a Footer</h1>
+			<h4> &copy; 2018 BLIP Footer</h4>
 		</div>
 
 

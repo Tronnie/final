@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Register.css";
 
-class Login extends React.Component {
+class Register extends React.Component {
 	// refs
 	form: null;
 	usernameElem: null;
@@ -35,7 +35,7 @@ class Login extends React.Component {
 	}
 }
 
-export default LoginForm
+export default Register
 
 ////sql-sequelize
 // import React, { Component } from 'react';

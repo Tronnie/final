@@ -3,6 +3,7 @@ import "./ModalConductor.css";
 import Modal from "react-modal";
 import Button from "../Button";
 import Login from "../Login";
+import Register from "../Register";
 import Success from "../Success";
 
 
