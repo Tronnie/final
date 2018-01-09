@@ -27,16 +27,16 @@ CREATE TABLE activities
 ### Seeds
 
 -- INSERT INTO users (user_name) VALUES ("Gail")
-INSERT INTO users (user_name) VALUES ("Gail");
-INSERT INTO users (user_name) VALUES ("Mario Bros.");
-INSERT INTO users (user_name) VALUES ("Larry David");
-INSERT INTO users (user_name) VALUES ("Oprah");
-INSERT INTO users (user_name) VALUES ("Dr.Oz");
+INSERT INTO Users (user_name) VALUES ("Gail");
+INSERT INTO Users (user_name) VALUES ("Mario Bros.");
+INSERT INTO Users (user_name) VALUES ("Larry David");
+INSERT INTO Users (user_name) VALUES ("Oprah");
+INSERT INTO Users (user_name) VALUES ("Dr.Oz");
 
 -- INSERT INTO events (event_id, was_accepted)
-INSERT INTO activities (user_id, activity_id, was_accepted) VALUES (1, 1, 1);
-INSERT INTO activities (user_id, activity_id, was_accepted) VALUES (2, 1, 1);
-INSERT INTO activities (user_id, activity_id, was_accepted) VALUES (1, 2, 1);
-INSERT INTO activities (user_id, activity_id, was_accepted) VALUES (1, 2, 0);
-INSERT INTO activities (user_id, activity_id, was_accepted) VALUES (3, 1, 1);
-INSERT INTO activities (user_id, activity_id, was_accepted) VALUES (3, 1, 0);
+INSERT INTO Activities (activity_id, was_accepted) VALUES (1, 1);
+INSERT INTO Activities (activity_id, was_accepted) VALUES (2, 1);
+INSERT INTO Activities (activity_id, was_accepted) VALUES (3, 1);
+INSERT INTO Activities (activity_id, was_accepted) VALUES (4, 0);
+INSERT INTO Activities (activity_id, was_accepted) VALUES (5, 1);
+INSERT INTO Activities (activity_id, was_accepted) VALUES (6, 0);

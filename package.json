@@ -19,6 +19,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "mongoose": "^4.13.7",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
     "react-star-rating": "^1.4.2",
     "sequelize": "^4.28.6"
   }
