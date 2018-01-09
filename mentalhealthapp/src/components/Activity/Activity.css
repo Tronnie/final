@@ -1,12 +1,11 @@
 #activity {
 
-<<<<<<< HEAD
-	/*background-color: blue;*/
-	background-image: url("background.jpg")
-/*=======
-	background-color: blue;*/
+
+	background-image: url("background.jpg");
+
+
 	height: 80%;
-/*>>>>>>> 1ea653f3a0eb256ac8863b73729712c39f4db629*/
+
 
 }
 
