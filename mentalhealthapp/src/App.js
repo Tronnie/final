@@ -4,8 +4,11 @@ import Activity from "./components/Activity";
 import './App.css';
 import tiles from './tiles.json';
 import Login from "./components/Login";
+import Footer from "./components/Footer";
 import ModalConductor from "./components/ModalConductor";
 import Modal from "react-modal";
+
+import axios from "axios";
 
 
 class App extends Component {
@@ -16,7 +19,19 @@ class App extends Component {
 		contents: '',
 		loggedIn: false,
 		modal:    false,
-		currentModal: "SIGN_IN"
+		currentModal: "SIGN_IN",
+		numDiscarded: 0
+	}
+
+	fetchUsers = () => {
+		axios.get('/api/users')
+			.then(response => {
+				console.log(response)
+
+			})
+			.catch(error => {
+				console.log(error)
+			})
 	}
 
 	display = (clicked,img,instructions) => {
@@ -75,11 +90,16 @@ class App extends Component {
     Modal.setAppElement('body');
  	}
 
+ 	discardTile =()=> {
+ 		this.setState({numDiscarded: this.state.numDiscarded +1});
+ 		console.log(this.state.numDiscarded);
+ 	}
+
 
   render() {
     return (
       <div className="App">
-      	<Navbar login={this.logIn} openMe={this.openMe} logout={this.logOut} status={this.state.loggedIn} />
+      	<Navbar users={this.fetchUsers} login={this.logIn} openMe={this.openMe} logout={this.logOut} status={this.state.loggedIn} />
       	<ModalConductor isOpen={this.state.modal} closeMe={this.closeMe} currentModal={this.state.currentModal} />
       	<Activity 
       			  tiles={tiles} 
@@ -89,8 +109,10 @@ class App extends Component {
       			  updater={this.updateClicked}
       			  display={this.display}
       			  success={this.success}
+      			  discard={this.discardTile}
       	 /> 
-        
+        <Footer/>
+
       </div>
     );
   }

@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
-// const mysql = require('mysql')
-const routes = require("./routes");
+let mysql = require('mysql');
+const db = require('./db_sql/models');
+const routes = require("./db_sql/routes/user-routes.js");
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 7500;
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,18 +15,34 @@ app.use(express.static("client/build"));
 app.use(routes);
 
 
-// Set up promises with mongoose
-mongoose.Promise = global.Promise;
-// Connect to the Mongo DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactactivitylist",
-  {
-    useMongoClient: true
-  }
-);
+
+
+// Set up MySQL
+
+let connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+	password: '0038ratdog',
+	database: 'mental_app_db'
+})
+
+connection.connect(function(err) {
+	if(err) throw err;
+	console.log('you are now connected')
+})
+
+// // Get all Users
+// app.get("/api/users", function(req,res){
+
+// 	console.log(res)
+
+// })
 
 
 // Start the API server
-app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
+
