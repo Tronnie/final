@@ -2,6 +2,7 @@ var db = require("../models");
 
 module.exports = function(app){
 
+
   // GET route for all
   app.get("/api/activities", function(req, res){
     var query = {};
@@ -27,6 +28,14 @@ module.exports = function(app){
     }).then(function(dbActivities){
       res.json(dbActivities);
     });
+  });
+
+  app.get("/api/test-make-fake-activities", function(req, res){
+    db.Activities.create({activity_id: 1, was_accepted: 0, UserId: 1});
+    db.Activities.create({activity_id: 1, was_accepted: 0, UserId: 2});
+    db.Activities.create({activity_id: 1, was_accepted: 0, UserId: 3});
+    db.Activities.create({activity_id: 2, was_accepted: 1, UserId: 1});
+      res.json({done:true});
   });
 
   // POST route

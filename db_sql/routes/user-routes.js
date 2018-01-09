@@ -25,9 +25,9 @@ module.exports = function(app){
   app.get("/api/test-make-fake-users", function(req, res){
     db.User.create({user_name: "Mr. T"});
     db.User.create({user_name: "Stone Cold Steve Austin"});
-    db.User.create({user_name: "Mr. T"});
-    db.User.create({user_name: "Mr. T"});
-    db.User.create({user_name: "Mr. T"});
+    db.User.create({user_name: "Oprah"});
+    db.User.create({user_name: "Dr. Oz"});
+    db.User.create({user_name: "Trebek"});
       res.json({done:true});
   });
 

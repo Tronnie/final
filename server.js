@@ -25,7 +25,7 @@ app.use(express.static("public"));
 let connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
-	password: '0038ratdog',
+	password: null,
 	database: 'mental_app_db'
 })
 
@@ -60,4 +60,3 @@ db.sequelize.sync({ force: false }).then(function() {
   });
 });
 });
-
