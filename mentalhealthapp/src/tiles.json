@@ -3,21 +3,21 @@
     "id": 1,
     "title": "Exercise",
     "image":
-      "bicycle.ico",
+      "bicycle.jpg",
     "instruction": "do 18 push ups"
   },
   {
     "id": 2,
     "title": "Journal",
     "image":
-      "journal.png",
+      "journal.jpg",
     "instruction": "Write about a moment you will never forget in your life"
   },
   {
     "id": 3,
     "title": "Mindful",
     "image":
-      "mindful.png",
+      "mindful.jpg",
     "instruction": "Settling in to bedtime, breathe in for a count of 4, hold 7, and exhale for 8. If you don't fall asleep it should at least bring down your heart rate"
   },
   {
@@ -32,35 +32,35 @@
     "id": 5,
     "title": "Journal",
     "image":
-      "journal.png",
+      "journal.jpg",
     "instruction": "Reflect on the people in your life who have supported you. Perhaps later you reach out to catch up with them. "
   },
  {
     "id": 6,
     "title": "Journal",
     "image":
-      "journal.png",
+      "journal.jpg",
     "instruction": "What are people's perception of you and what would you wish they would know about you? "
   },
    {
     "id": 7,
     "title": "Journal",
     "image":
-      "journal.png",
+      "journal.jpg",
     "instruction": " What makes you feel most energized?"
   },
    {
     "id": 8,
     "title": "Journal",
     "image":
-      "journal.png",
+      "journal.jpg",
     "instruction": "List your non-negotiables in life"
   },
    {
     "id": 9,
     "title": "Journal",
     "image":
-      "journal.png",
+      "journal.jpg",
     "instruction": "What you say yes to, what you say no to. Commit to them. "
   },
 
@@ -68,7 +68,7 @@
     "id": 10,
     "title": "Mindful",
     "image":
-      "mindful.png",
+      "mindful.jpg",
     "instruction": "Find a comfortable spot, meditate for 20 minutes."
   },
 
@@ -76,7 +76,7 @@
     "id": 11,
     "title": "Mindful",
     "image":
-      "mindful.png",
+      "mindful.jpg",
     "instruction": " Find a routine you enjoy and take your time to eek it out. Notice if slowing down speeds things up."
   },
 
@@ -84,14 +84,14 @@
     "id": 12,
     "title": "Mindful",
     "image":
-      "mindful.png",
+      "mindful.jpg",
     "instruction": "Observe your thoughts for fifteen minutes. Self-study."
   },
  {
     "id": 13,
     "title": "Mindful",
     "image":
-      "mindful.png",
+      "mindful.jpg",
     "instruction": "In your yoga class, forget the fancy poses, focus on Savasana (corpse pose) at the end of the practice. Where did it take you? Besides zzzzz."
   },
 
@@ -169,7 +169,7 @@
       "id": 23,
       "title": "Mindful",
       "image":
-        "mindful.png",
+        "mindful.jpg",
       "instruction": "Mindful Walking for 10 minutes.  Set a timer.  Keep hands stationary either on sides, behind the back or in front. Begin walkding and notice teh lifting forward and placing movement of the foot in each step.  Finish one step completely before lifting the other foot.  Use the movement to develop careful awareness. The exercise is in mindfulness not movement."
     },
 
@@ -185,7 +185,7 @@
           "id": 25,
           "title": "Journal",
           "image":
-            "journal.png",
+            "journal.jpg",
           "instruction": "Color Schemes.  Pick a color and write a quick few sentences describing yourself in the first person.  (e.g.'I am silver, high-tech and ethereal, the color of reams and accomplishment').  What is your favorite color? What do you have that is that color?"
         },
 
