@@ -27,7 +27,7 @@ class Activity extends React.Component{
 
 
   	handleClick() {
-    	console.log('Click happened');
+    	
     	document.getElementById(x+"-star").checked = true
   		x--
 
