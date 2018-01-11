@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
 let connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
-	password: null,
+	password: 'null',
 	database: 'mental_app_db'
 })
 

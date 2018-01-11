@@ -45,12 +45,62 @@ const ModalConductor = (props) => {
 					style={customStyles}
 					contentLabel="Modal"
 					>
+					<h3>User Login</h3>
 					<Login currentModal={props.currentModal} />
+					
 					<div id="cancel">
 						<Button onClick={props.closeMe} name="Cancel"/>
 					</div>
 				</Modal>);
 				break;
+
+			case "SIGN_UP":
+				return( <Modal 
+					isOpen={props.isOpen}
+					style={customStyles}
+					contentLabel="Modal"
+					>
+					<h3>Register as User</h3>
+					<Register currentModal={props.currentModal} />
+					
+					<div id="cancel">
+						<Button onClick={props.closeMe} name="Cancel"/>
+					</div>
+				</Modal>);
+				break;
+
+			// case "Tracker":
+			// 	return( <Modal 
+			// 		isOpen={props.isOpen}
+			// 		style={customStyles}
+			// 		contentLabel="Modal"
+			// 		>
+			// 		<h3>Track User Activities</h3>
+			// 		<Register currentModal={props.currentModal} />
+					
+			// 		<div id="cancel">
+			// 			<Button onClick={props.closeMe} name="Cancel"/>
+			// 		</div>
+			// 	</Modal>);
+			// 	break;
+
+			// 	case "Resources":
+			// 	return( <Modal 
+			// 		isOpen={props.isOpen}
+			// 		style={customStyles}
+			// 		contentLabel="Modal"
+			// 		>
+			// 		<h3>Resource Links</h3>
+			// 		<Register currentModal={props.currentModal} />
+					
+			// 		<div id="cancel">
+			// 			<Button onClick={props.closeMe} name="Cancel"/>
+			// 		</div>
+			// 	</Modal>);
+			// 	break;
+
+
+
 				
 			case "SUCCESS":
 				return(<Modal 
@@ -74,8 +124,9 @@ const ModalConductor = (props) => {
 //use:
 //login
 //register
-//accept
-//done
+//tracker
+//resources
+
 
 
 

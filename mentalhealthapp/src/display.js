@@ -9,6 +9,7 @@
 		} else {
 			return(
 				<h3>{instructions}</h3>
+				
 			)
 		}
 
