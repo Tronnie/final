@@ -5,9 +5,8 @@ import DoneButton from "../DoneButton";
 
 const Instruction =(props)=> {
 
-
-	<DoneButton />
-
+	
+	//<DoneButton />
 
 }
 

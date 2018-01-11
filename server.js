@@ -25,7 +25,7 @@ app.use(express.static("public"));
 let connection = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
-	password: null,
+	password: 'null',
 	database: 'mental_app_db'
 })
 
