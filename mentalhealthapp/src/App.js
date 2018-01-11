@@ -77,7 +77,7 @@ class App extends Component {
 		if(!clicked) {
 				this.setState({contents:<img src={img} alt='hehe no pic for u'/>})
 		} else {
-				this.setState({contents:<h3>{instructions}<button onClick={this.handleClick}>Done!</button></h3>})
+				this.setState({contents:<h3>{instructions}<p></p><button onClick={this.handleClick}>Done!</button></h3>})
 		}
 
 	}
