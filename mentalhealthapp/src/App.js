@@ -4,7 +4,7 @@ import Activity from "./components/Activity";
 import './App.css';
 import tiles from './tiles.json';
 import Login from "./components/Login";
-
+import Stars from "./components/Stars";
 import Register from "./components/Register";
 
 import Footer from "./components/Footer";
@@ -13,7 +13,7 @@ import Modal from "react-modal";
 
 import axios from "axios";
 
-
+var x = 5
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -30,6 +30,8 @@ class App extends Component {
 		};
 
 		this.fetchUsers = this.fetchUsers.bind(this);
+
+		this.handleClick = this.handleClick.bind(this);
 
 	}
 
@@ -56,13 +58,26 @@ class App extends Component {
 		this.testFunction();
 	}
 
+
+
+  	handleClick() {
+    	
+    	document.getElementById(x+"-star").checked = true
+  		x--
+
+  		if(x < 2){
+    	x = 1
+  		}
+  		console.log(x)
+    }
+
 	display = (clicked,img,instructions) => {
 		console.log(this.state.clicked)
 
 		if(!clicked) {
 				this.setState({contents:<img src={img} alt='hehe no pic for u'/>})
 		} else {
-				this.setState({contents:<h3>{instructions}</h3>})
+				this.setState({contents:<h3>{instructions}<button onClick={this.handleClick}>Done!</button></h3>})
 		}
 
 	}
