@@ -4,7 +4,6 @@ import Tile from "../Tile";
 import Stars from "../Stars";
 import ReactSwipe from "react-swipe";
 
-var x = 5
 class Activity extends React.Component{
 
 	  
@@ -20,22 +19,7 @@ class Activity extends React.Component{
 	    this.reactSwipe.next();
 	  }
 
-	  constructor(props) {
-    	super(props);
-    	this.handleClick = this.handleClick.bind(this);
-  	}
-
-
-  	handleClick() {
-    	
-    	document.getElementById(x+"-star").checked = true
-  		x--
-
-  		if(x < 2){
-    	x = 1
-  		}
-  		console.log(x)
-  }
+	  
 
 	
 	render() {
@@ -66,7 +50,7 @@ class Activity extends React.Component{
 								 success={this.props.success}
 								 		/></div>))}
 						</ReactSwipe>
-						<button onClick={this.handleClick}>Click Me</button>;
+						
 					</div>
 				</div>
 
