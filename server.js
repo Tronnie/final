@@ -25,14 +25,26 @@ app.use(function(req, res, next) {
 });
 
 
+// // add in the environment variable option for JAWSDB for heroku
+if (process.env.JAWSDB_URL) {
+connection = mysql.createConnection(process.env.JAWSDB_URL);
+ } else {
+ 		connection = mysql.createConnection({
+ 			host: "localhost",
+ 			user: "root",
+ 			password: null,
+ 			database: "mental_app_db"
+ 		});
+ 	};
+
 // Set up MySQL
 
-let connection = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	password: 'null',
-	database: 'mental_app_db'
-})
+// let connection = mysql.createConnection({
+// 	host: 'localhost',
+// 	user: 'root',
+// 	password: 'null',
+// 	database: 'mental_app_db'
+// })
 
 connection.connect(function(err) {
 	if(err) throw err;
