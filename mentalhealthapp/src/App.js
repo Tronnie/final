@@ -15,7 +15,23 @@ import axios from "axios";
 
 
 class App extends Component {
+	constructor(props) {
+		super(props);
 
+		this.state = {
+			clicked: false,
+			contents: '',
+			loggedIn: false,
+			modal:    false,
+			currentModal: "SIGN_IN",
+			numDiscarded: 0,
+			users: ['hello world'],
+			activities: []
+		};
+
+		this.fetchUsers = this.fetchUsers.bind(this);
+
+	}
 
 	state = {
 		clicked: false,
@@ -23,18 +39,21 @@ class App extends Component {
 		loggedIn: false,
 		modal:    false,
 		currentModal: "SIGN_IN",
-		numDiscarded: 0
+		numDiscarded: 0,
+		users: ['hello world'],
+		activities: []
 	}
 
-	fetchUsers = () => {
-		axios.get('/api/users')
-			.then(response => {
-				console.log(response)
+	testFunction() {
+    axios.get('http://localhost:7500/api/users')
+      .then(res => {
+        console.log(res);
+      });
+    }
 
-			})
-			.catch(error => {
-				console.log(error)
-			})
+
+	fetchUsers = () => {
+		this.testFunction();
 	}
 
 	display = (clicked,img,instructions) => {
